@@ -8,72 +8,70 @@
 <body>
   
 <button onclick="
-    console.log(`Cart quantity: ${cartQuantity}`);
+    console.log(`Cart quantity: ${cartQuantity}`);  // cart quantity 0
 
     ">show quantity</button>
  <button onclick="
      cartQuantity++;
-    console.log(`Cart quantity: ${cartQuantity}`);
+    console.log(`Cart quantity: ${cartQuantity}`); // cart quantity + 1 
  
  ">Add to cart</button>
 
  <button onclick="
 
 cartQuantity += 2;
- console.log(`cart quantity: ${cartQuantity}`);
+ console.log(`cart quantity: ${cartQuantity}`); // cart quantity incremented by 2  aka 2 added to cart 
  
  ">+2</button>
 
  <button onclick="
         cartQuantity = cartQuantity + 3;
-        console.log(`cart quantity: ${cartQuantity}`);
- 
+        console.log(`cart quantity: ${cartQuantity}`); // cart quantity incremented by 3 aka 3 added to cart
  ">+3</button>
 
  <button onclick="
   cartQuantity = 0;
-  console.log('cart was reset');
-  console.log(`cart quantity: ${cartQuantity}`);
+  console.log('cart was reset');  // cart was reset 
+  console.log(`cart quantity: ${cartQuantity}`);  // cart quantity has been reseted to 0.
 
  "> Reset cart</button>
  <button onclick="
   cartQuantity += 4;
-  console.log(` cart quantity: $${cartQuantity}`);
-
-
+  console.log(` cart quantity: $${cartQuantity}`); // cart quantity incremented by 4.
  ">
  +4 
  </button>
+    
 <button onclick="
 cartQuantity +=5;
-console.log(` cart quantity: $${cartQuantity}`);
+console.log(` cart quantity: $${cartQuantity}`); // cart incremented by 5
 ">
  +5
 </button> 
 <button  onclick="
 cartQuantity --; 
-console.log(`cart quantity: $${cartQuantity}`);
+console.log(`cart quantity: $${cartQuantity}`); // cart quantity -1
 ">
   -1 
 </button>
 <button onclick="
 cartQuantity -=2 ;
-console.log( `cart quantity: $${cartQuantity}`);
+console.log( `cart quantity: $${cartQuantity}`); // cart quantity -2
 
 ">
 -2
 </button>
  <script>
-   let cartQuantity = 0;
+   let cartQuantity = 0; 
    let name = 'Elijah';
-   console.log(`My name is: ${name}`);
+   console.log(`My name is: ${name}`); // My name is Elijah
 
-    let cost = (`total cost: $${5 + (3 * 2) + 9} `);
-    console.log(cost);
-    cost = (`$${20 * 0.1}`);
-    console.log(cost);
+    let cost = (`total cost: $${5 + (3 * 2) + 9} `); 
+    console.log(cost); // $20 
+    cost = (`$${20 * 0.1}`); 
+    console.log(cost);  // 2
 let totalCost = (`${cost + 2}`)
- console.log(totalCost);
+ console.log(totalCost); // $22
 
  
 </script>
